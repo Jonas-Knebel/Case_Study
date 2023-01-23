@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { HttpService } from '../services/http.service';
+import { ContactModel } from './ContactModel';
 
 @Component({
   selector: 'app-contact',
@@ -8,10 +10,10 @@ import { HttpService } from '../services/http.service';
 })
 export class ContactComponent implements OnInit {
   constructor(private httpService: HttpService) {}
-
+  userList: ContactModel[];
   ngOnInit(): void {
-    this.httpService.getUsers().subscribe((users) => {
-      console.log(users);
+    this.httpService.getUsers().subscribe((users: ContactModel[]) => {
+      this.userList = users;
     });
   }
 }

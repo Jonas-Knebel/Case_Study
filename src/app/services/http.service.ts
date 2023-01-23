@@ -9,9 +9,9 @@ import { ContactModel } from '../contact/ContactModel';
 export class HttpService {
   constructor(private http: HttpClient) {}
 
-  getUsers(): Observable<ContactModel> {
+  getUsers(): Observable<ContactModel[]> {
     return this.http
-      .get<ContactModel>('https://jsonplaceholder.typicode.com/users')
+      .get<ContactModel[]>('https://jsonplaceholder.typicode.com/users')
       .pipe(catchError((error) => throwError(() => new Error(error))));
   }
 }
