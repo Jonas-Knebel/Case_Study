@@ -7,8 +7,6 @@ import { HelpComponent } from './helpPage/help/help.component';
 import { ServicePortalComponent } from './helpPage/service-portal/service-portal.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PriceListComponent } from './pricePage/price-list/price-list.component';
-import { PriceModelComponent } from './pricePage/price-model/price-model.component';
-import { VideoComponent } from './video/video.component';
 
 const routes: Routes = [
   { path: 'homepage', component: HomepageComponent },

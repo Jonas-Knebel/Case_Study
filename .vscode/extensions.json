@@ -3,6 +3,7 @@
   "recommendations": [
     "angular.ng-template",
     "christian-kohler.path-intellisense",
-    "formulahendry.auto-rename-tag"
+    "formulahendry.auto-rename-tag",
+    "alfnielsen.vsc-organize-imports"
   ]
 }
