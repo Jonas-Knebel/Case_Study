@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CourseListComponent } from './coursePage/course-list/course-list.component';
 import { CourseComponent } from './coursePage/course/course.component';
+import { VideoComponent } from './coursePage/video/video.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './helpPage/contact/contact.component';
@@ -16,7 +17,6 @@ import { PriceListComponent } from './pricePage/price-list/price-list.component'
 import { PriceModelComponent } from './pricePage/price-model/price-model.component';
 import { DataService } from './services/data-service.service';
 import { HttpService } from './services/http.service';
-import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
