@@ -6,12 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CourseListComponent } from './coursePage/course-list/course-list.component';
 import { CourseComponent } from './coursePage/course/course.component';
-import { VideoComponent } from './coursePage/video/video.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './helpPage/contact/contact.component';
 import { HelpComponent } from './helpPage/help/help.component';
-import { ServicePortalComponent } from './helpPage/service-portal/service-portal.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { PriceListComponent } from './pricePage/price-list/price-list.component';
 import { PriceModelComponent } from './pricePage/price-model/price-model.component';
@@ -27,9 +25,7 @@ import { HttpService } from './services/http.service';
     PriceListComponent,
     ContactComponent,
     PriceModelComponent,
-    ServicePortalComponent,
     HelpComponent,
-    VideoComponent,
     CourseListComponent,
     HomepageComponent,
     PriceListComponent,
