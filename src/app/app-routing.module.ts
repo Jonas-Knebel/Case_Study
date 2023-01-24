@@ -1,31 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
-import { CourseComponent } from './course/course.component';
-import { ExcelComponent } from './excel/excel.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { PortalComponent } from './portal/portal.component';
-import { PowerpointComponent } from './powerpoint/powerpoint.component';
-import { PriceModelComponent } from './price-model/price-model.component';
-import { PriceComponent } from './price/price.component';
+import { CourseListComponent } from './coursePage/course-list/course-list.component';
+import { ContactComponent } from './helpPage/contact/contact.component';
+import { HelpComponent } from './helpPage/help/help.component';
+import { ServicePortalComponent } from './helpPage/service-portal/service-portal.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { PriceListComponent } from './pricePage/price-list/price-list.component';
+import { PriceModelComponent } from './pricePage/price-model/price-model.component';
 import { VideoComponent } from './video/video.component';
-import { WordComponent } from './word/word.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'course', component: CourseComponent },
-  { path: 'price', component: PriceComponent },
-  { path: 'portal', component: PortalComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'price-model', component: PriceModelComponent },
-  { path: 'excel', component: ExcelComponent },
-  { path: 'powerpoint', component: PowerpointComponent },
-  { path: 'word', component: WordComponent },
-  { path: 'video', component: VideoComponent },
-  { path: '**', redirectTo: '' },
+  { path: 'homepage', component: HomepageComponent },
+  { path: 'course-list', component: CourseListComponent },
+  { path: 'price-list', component: PriceListComponent },
+  { path: 'help', component: HelpComponent },
+  { path: 'help/service-portal', component: ServicePortalComponent },
+  { path: 'help/service-portal/contact', component: ContactComponent },
+  { path: '**', redirectTo: 'homepage' },
 ];
 
 @NgModule({
